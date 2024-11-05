@@ -38,21 +38,62 @@
         </button>
       </nav>
     </header>
-
+    
     <main class="main">
-      <section class="main__hero">
+      <section class="main__hero contact__hero">
         <figure>
           <img
-            src="images/construction_cleaning_hero_image.jpg"
+            src="images/contactHero.png"
             alt="construction cleaning hero image"
           />
         </figure>
       </section>
+      <article class="main__article__contact">
+        <h2 class="main__article__contact__h2">Contact Us</h2>
+        <section class="main__article__contact__container">
+            <p class="contact__personal__info">
+                Contact me at: <span class="wrap">Phone - (123) 456-7890</span>
+                <span class="wrap">Email - sedinamkingsley@gmail.com</span>
+            </p>
+            <p class="contact__personal__info">Locate me at:
+                <address>
+                    <span class="wrap">351 Pagosa Lane</span>
+                    <span class="wrap">Saratoga Springs</span>
+                    <span class="wrap">Utah</span>
+                </address>
+            </p>
+        </section>
+        <hr/>
+        <form action="mailto:sedinamkingsley@gmail.com" method="get" enctype="text/plain" class="contact__form">
+            <p>
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" required/>
+            </p>
+            
+            <p>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" required/>
+            </p>
+
+            <p>
+                <label for="email">Email Address: </label>
+                <input type="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="message">Message: </label>
+                <textarea name="message" id="message" cols="100" rows="8"></textarea>
+            </p>
+            <button class="form_submit_btn" type="submit">
+                Send
+            </button>
+        </form>
+      </article>
     </main>
     <footer class="footer">
       <figure>
         <a href="/"><img src="images/logo.webp" alt="" /></a>
-      </figure>
+      </figure> 
       <p>Copyright &copy; 2024</p>
       <address>Address/contact</address>
     </footer>
